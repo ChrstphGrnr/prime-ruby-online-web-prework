@@ -5,7 +5,7 @@ def prime?(integer)
   if integer < 2 
     false
   else
-    if range.map { |x| integer / x } == range.map { |x| x = 0 } 
+    if range.map { |x| integer / x } <=> range.map { |x| x = 0 } 
      true
     elsif
      false
