@@ -5,8 +5,8 @@ def prime?(integer)
   if integer < 2 
     false
   else
-    if range.map { |x| integer / x }.include?(0)
-     false
+    if range.map { |x| integer / x } == 0 
+     true
     end
   end
 end
