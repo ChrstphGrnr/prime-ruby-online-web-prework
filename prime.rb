@@ -8,7 +8,8 @@ def prime?(integer)
     if range.map { |x| integer / x }.include?(0)
      false
     end
-    if range.map { |x| integer / x }.
+    if range.map { |x| integer / x }.exclude?(0)
+      true
     end
   end
 end
